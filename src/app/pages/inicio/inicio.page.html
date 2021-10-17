@@ -1,0 +1,11 @@
+<app-header title="Alarma"></app-header>
+<ion-content color="light" class="ion-padding">
+  <div class="center">
+    <h1>{{alarma.isActive? "Bloqueado" : "Desbloqueado"}}</h1>
+    <ion-fab-button (click)="lock()">
+      <ion-icon
+        [name]="!alarma.isActive? 'lock-open-sharp': 'lock-closed-sharp'"
+      ></ion-icon>
+    </ion-fab-button>
+  </div>
+</ion-content>
